@@ -1,6 +1,6 @@
 name: hola Mundo # Nombre del workflow
 
-on: [push] # Evento que se dispara al hacer un push
+on: [push, pull_request] # Evento que se dispara al hacer un push
 
 jobs: #lo que queremos ejecutar, se realiza dentro de un servidor
   hola: #nombre del job
