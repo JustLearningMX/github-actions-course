@@ -1,0 +1,10 @@
+name: hola Mundo # Nombre del workflow
+
+on: [push] # Evento que se dispara al hacer un push
+
+jobs: #lo que queremos ejecutar, se realiza dentro de un servidor
+  hola: #nombre del job
+    runs-on: ubuntu-latest # servidor
+    steps: #pasos, unidad mas pequeña de un job
+      - name: hola Mundo #nombre del paso
+        run: echo "Hola Mundo" #comando a ejecutar
