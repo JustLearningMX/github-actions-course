@@ -9,6 +9,15 @@ jobs: #lo que queremos ejecutar, se realiza dentro de un servidor
       - name: hola Mundo #nombre del paso
         run: echo "Hola Mundo" #comando a ejecutar
 
+      - name: touch file
+        run: touch file.txt
+
+      - name: Set text
+        run: echo "Hola mundo" > hola.txt
+
+      - name: Read file
+        run: cat hola.txt
+
   listar:
     runs-on: ubuntu-latest
     steps:
