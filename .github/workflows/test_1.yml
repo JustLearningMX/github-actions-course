@@ -8,3 +8,9 @@ jobs: #lo que queremos ejecutar, se realiza dentro de un servidor
     steps: #pasos, unidad mas pequeña de un job
       - name: hola Mundo #nombre del paso
         run: echo "Hola Mundo" #comando a ejecutar
+
+  listar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: listar archivos
+        run: ls -al
