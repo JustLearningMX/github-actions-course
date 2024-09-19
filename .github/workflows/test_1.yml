@@ -20,6 +20,7 @@ jobs: #lo que queremos ejecutar, se realiza dentro de un servidor
 
   listar:
     runs-on: ubuntu-latest
+    needs: [hola]
     steps:
       - name: listar archivos
         run: ls -al
