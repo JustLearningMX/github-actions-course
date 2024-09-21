@@ -18,10 +18,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.7
 
-      - name: install dependencies
-        run: |
-          chmod +x ./script.sh
-          ./script.sh
+      - name: Hola Mundo
+        uses: ./.github/actions/my-action #Usamos la action que creamos
+
+#      - name: install dependencies
+#        run: |
+#          chmod +x ./script.sh
+#          ./script.sh
 
 #jobs: #lo que queremos ejecutar, se realiza dentro de un servidor
 #  hola: #nombre del job

@@ -1,0 +1,10 @@
+name: "My action"
+description: "Test my action"
+
+runs:
+  using: "composite" #Las actions de este tipo permiten agrupar pasos en un solo paso
+
+  steps:
+    - name: Hola Mundo
+      run: echo "Hola Mundo"
+      shell: bash
